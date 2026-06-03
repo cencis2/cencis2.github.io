@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Guide - Attractions </title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Taniti Guide</h1></a>
+        <image id="hamburger-menu-icon" src="images/feen-flaticon.png"></image>
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="accommodations.html">Accommodations</a>
+        <a href="transportation.html">Transportation</a>
+    </nav>
+    </header>
+    <main>
+        <!-- cable-car-on-sea-coast-at-thom-island-in-vietnam-26742975 -->
+        <image class="hero-image" src="images/pexels-quang-nguyen-vinh-222549-26742975.jpg"></image>
+
+        <div class="text-block">
+            <p>
+            Welcome to the heart of the island’s adventure. From awe-inspiring natural landmarks to unforgettable dining experiences and lively community events, Taniti offers something spectacular for every type of traveler. Explore the categories below to craft your perfect island itinerary.
+            </p>
+        </div>
+        
+        <div class="carousel">
+            <div class="row-1">
+                <h2>Sightseeing & Nature</h2>
+                <b>More ></b>
+            </div>
+            <div class="row-2">
+                <h3>Rainforest Hiking Trails</h3>
+            </div>
+            <div class="row-3">
+                <h2>&lt;</h2>
+                <!-- group-hiking-adventure-in-dense-green-forest-37679503 -->
+         <image class="carousel-image" src="images/pexels-lucaspezeta-37679503.jpg"></image> 
+                <h2>></h2>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="row-1">
+                <h2>Activities & Entertainment</h2>
+                <b>More ></b>
+            </div>
+            <div class="row-2">
+                <h3>Helicopter Rides</h3>
+            </div>
+            <div class="row-3">
+                <h2>&lt;</h2>
+                <!-- person-wearing-white-tank-top-3453004/ -->
+         <image class="carousel-image" src="images/pexels-denniz-futalan-339724-3453004.jpg"></image> 
+                <h2>></h2>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="row-1">
+                <h2>Dining & Local Eats</h2>
+                <b>More ></b>
+            </div>
+            <div class="row-2">
+                <h3>The Mango Grove Kitchen</h3>
+            </div>
+            <div class="row-3">
+                <h2>&lt;</h2>
+                <!-- outdoor-cafe-architectural-design-8243665/ -->
+                <image src="images/pexels-olegprachuk-8243665-cropped.jpg" class="carousel-image"></image>
+                <h2>></h2>
+            </div>
+        </div>
+        <div class="cta-group">
+            <a class="cta-button" href="transportation.html">Explore Transportation</a>
+        <a class="cta-button" href="accommodations.html">Find Accommodations</a>
+        </div>
+    </main>
+    <footer>
+        <a href="#">
+                <h3>Contact Us</h3>
+            </a>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('hamburger-menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
+    </script>
+</body>
+</html>

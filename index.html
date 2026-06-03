@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Guide - Home Page</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Taniti Guide</h1></a>
+        <image id="hamburger-menu-icon" src="images/feen-flaticon.png"></image>
+        <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="accommodations.html">Accommodations</a>
+        <a href="transportation.html">Transportation</a>
+    </nav>
+    </header>
+    <main>
+        <!-- an-island-with-cottages-and-beach-chairs-1174732 -->
+        <image class="hero-image" src="images/pexels-vincent-gerbouin-445991-1174732.jpg"></image>
+        
+        <div class="text-block">
+            <p>
+            Welcome to Taniti, a peaceful island paradise! Whether you want to unwind on pristine beaches or explore lush rainforests, this website has everything you need to plan your perfect getaway.
+            </p>
+            <p>
+            Ready to start planning your trip? Tap below to secure your lodging or figure out how you'll get around the island.
+            </p>
+        </div>
+        <div class="cta-group">
+            <a class="cta-button" href="transportation.html">Explore Transportation</a>
+            <a class="cta-button" href="accommodations.html">Find Accommodations </a>
+        </div>
+        <div class="carousel">
+            <div class="row-1">
+                <h2>New Attractions & Events</h2>
+                <a href="attractions.html">
+                    <b>More ></b>
+                </a>
+            </div>
+            <div class="row-2">
+                <h3>Sunset Market</h3>
+            </div>
+            <div class="row-3">
+                <h2>&lt;</h2>
+                <!-- vibrant-night-market-with-diverse-crowd-36597025 -->
+                <image src="images/pexels-jonathanborba-36597025-cropped.jpg" class="carousel-image"></image>
+                <h2>></h2>
+            </div>
+        </div>
+        <div class="carousel">
+            <div class="row-1">
+                <h2>Hidden Gems</h2>
+                <a href="attractions.html">
+                    <b>More ></b>
+                </a>
+            </div>
+            <div class="row-2">
+                <h3>Blue Lagoon Cave</h3>
+            </div>
+            <div class="row-3">
+                <h2>&lt;</h2>
+                <!-- brown-rock-formation-with-clear-blue-water-6477498 -->
+                <image src="images/pexels-dimi-6477498.jpg" class="carousel-image"></image>
+                <h2>></h2>
+            </div>
+        </div>
+        <div class="accordion">
+            <h2>FAQs</h2>
+            <div class="question">
+                <p>What type of power outlets are used on Taniti?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer"><p>Power outlets are 120 volts, which is the exact same standard as used in the United States.</p>
+        </div>
+
+            <div class="question">
+                <p>What are the alcohol sale laws and legal drinking age?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">The legal drinking age on Taniti is 18 (though it is not strictly enforced). However, please note that alcohol is not allowed to be served or sold anywhere on the island between midnight and 9:00 a.m.</div>
+
+            <div class="question">
+                <p>Do people speak English on Taniti?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">Many younger Tanitians speak fluent English. However, very little English is spoken in rural areas, especially by older residents, so it is helpful to have a translation app handy when exploring.</div>
+
+            <div class="question">
+                <p>Is there medical care available on the island?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">Yes. There is one main hospital and several smaller medical clinics. For peace of mind, the hospital features many multilingual employees to assist international visitors.</div>
+
+            <div class="question">
+                <p>Is Taniti safe for tourists?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">Violent crime is very rare on Taniti. However, as tourism has grown, there have been increasing reports of pickpocketing and other petty theft. We recommend keeping an eye on your belongings in crowded areas.</div>
+
+            <div class="question">
+                <p>Do holiday closures affect tourist areas?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">Yes. Taniti enjoys a large number of national holidays. Many tourist attractions and local restaurants close on these days, so it is highly recommended to check local calendars and plan your schedule accordingly.</div>
+
+            <div class="question">
+                <p>What currency is accepted on Taniti, and can I use credit cards?</p>
+                <p class="down-triangle">&#9660;</p>
+                <p class="right-triangle">&#9658;</p>
+            </div>
+            <div class="answer">Taniti uses the U.S. dollar ($) as its official currency, but many local businesses also accept euros and yen. Major credit cards are widely accepted, and there are several banks available across the island to facilitate currency exchange.</div>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="#">
+                
+                <h3>Contact Us</h3>
+                <p style="font-size: 0.85rem; color: #555; margin-top: 10px;">
+            Photos sourced from <a href="https://www.pexels.com" target="_blank"style=" text-decoration: underline;">Pexels.com</a>
+        </p>
+            </a>
+        </div>
+    </footer>
+    <script>
+        const menuIcon = document.getElementById('hamburger-menu-icon');
+const navMenu = document.getElementById('nav-menu');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
+        document.querySelectorAll('.question').forEach(question => {
+    question.addEventListener('click', () => {
+        
+        const isActive = question.classList.contains('active');
+
+        document.querySelectorAll('.question').forEach(q => {
+            q.classList.remove('active');
+            q.querySelector('.right-triangle').style.display = 'inline';
+        });
+
+        if (!isActive) {
+            question.classList.add('active');
+            question.querySelector('.right-triangle').style.display = 'none';
+        }
+    });
+});
+    </script>
+</body>
+</html>
